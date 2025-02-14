@@ -37,4 +37,9 @@ module pipelined_tb;
 				$display("Simulation failed");
 				$stop;
 			end
+
+	initial begin
+        $dumpfile("waveforms.vcd");
+        $dumpvars(0, pipelined_tb);
+    end
 endmodule
