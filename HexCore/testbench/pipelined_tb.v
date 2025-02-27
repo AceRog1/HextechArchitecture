@@ -32,10 +32,12 @@ module pipelined_tb;
 			if ((DataAdr === 100) & (WriteData === 7)) begin
 				$display("Simulation succeeded");
 				$stop;
+				$finish;
 			end
 			else if (DataAdr !== 96) begin
 				$display("Simulation failed");
 				$stop;
+				$finish;
 			end
 
 	initial begin

@@ -6,7 +6,7 @@ all:
 	iverilog -o $(OUT) $(SRC)
 
 sim:
-	vvp -n $(OUT) && gtkwave $(SIM) &
+	vvp -n $(OUT) && gtkwave $(SIM)
 
 clear:
 	rm -f $(OUT) $(SIM)
